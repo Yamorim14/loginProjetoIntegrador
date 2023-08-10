@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: #323232;
+    border: none;
+}
+
+body{
+    background-image: url('../assets/paisagem.jpg');
+    background-size: cover;
+}
+
+input:focus{
+    outline: none;
+}
+
+a, label{
+    font-size: 1rem;
+}
+
+a:hover{
+    color: #156dac;
+}
+
+/*main-container*/
+#main-container{
+    background-color: #ffffff;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 25px;
+    margin-top: 10vh;
+    border-radius: 10px;
+}
+
+#main-container h1{
+    text-align: center;
+}
+
+/*formulário*/
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.full-box{
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
+}
+
+.half-box input, .half-box.spacing input{
+    width: 90%;
+}
+
+label, input{
+    display: block;
+    width: 95%;
+    text-align: left;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus{
+    border-bottom: 2px solid #156dac;
+}
+
+input[type="submit"]{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #1b223c;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #1b223c;
+    transition: .5s;
+}
+
+#agreement{
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label{
+    margin: 1%;
+    display: inline-block;
+    width: auto;
+}
+
+.error-validation{
+    color: #ff1a1a;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template{
+    display: none;
+}
